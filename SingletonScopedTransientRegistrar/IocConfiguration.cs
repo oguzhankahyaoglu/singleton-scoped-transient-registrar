@@ -5,7 +5,7 @@ namespace SingletonScopedTransientRegistrar
 {
     public static class IocConfiguration
     {
-        public static void RegisterSingletonScopedTransientDependencies(IServiceCollection services, string projectAssemblyPrefix)
+        public static void RegisterSingletonScopedTransientDependencies(this IServiceCollection services, string projectAssemblyPrefix)
         {
             services.Scan(scan =>
             {

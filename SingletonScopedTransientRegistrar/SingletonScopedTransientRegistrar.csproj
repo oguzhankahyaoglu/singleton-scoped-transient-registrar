@@ -10,7 +10,7 @@
         <PackageProjectUrl>https://github.com/oguzhankahyaoglu/singleton-scoped-transient-registrar.git</PackageProjectUrl>
         <RepositoryUrl>https://github.com/oguzhankahyaoglu/singleton-scoped-transient-registrar.git</RepositoryUrl>
         <PackageTags>singleton scoped transient dependency registrar</PackageTags>
-        <PackageVersion>1.0.0</PackageVersion>
+        <PackageVersion>1.0.1</PackageVersion>
         <PackageReleaseNotes>
             1.0 initial release
         </PackageReleaseNotes>
