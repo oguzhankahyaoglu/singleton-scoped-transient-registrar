@@ -1,0 +1,24 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+    <PropertyGroup>
+        <TargetFramework>netcoreapp3.1</TargetFramework>
+        <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
+        <PackageId>singleton-scoped-transient-dependency-registrar</PackageId>
+        <Title>singleton-scoped-transient-dependency-registrar</Title>
+        <Authors>oguzhankahyaoglu</Authors>
+        <Description>Common library for registering any component using ISingletonDependency, IScopedDependency and ITransientDependency</Description>
+        <PackageProjectUrl>https://github.com/oguzhankahyaoglu/singleton-scoped-transient-registrar.git</PackageProjectUrl>
+        <RepositoryUrl>https://github.com/oguzhankahyaoglu/singleton-scoped-transient-registrar.git</RepositoryUrl>
+        <PackageTags>singleton scoped transient dependency registrar</PackageTags>
+        <PackageVersion>1.0.0</PackageVersion>
+        <PackageReleaseNotes>
+            1.0 initial release
+        </PackageReleaseNotes>
+    </PropertyGroup>
+
+    <ItemGroup>
+        <PackageReference Include="Microsoft.Extensions.DependencyInjection.Abstractions" Version="3.1.8"/>
+        <PackageReference Include="Scrutor" Version="3.2.1"/>
+    </ItemGroup>
+
+</Project>
