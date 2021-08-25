@@ -1,6 +1,6 @@
 ﻿namespace SingletonScopedTransientRegistrar
 {
-    public interface IScopedDependency
+    public interface ITransient
     {
         
     }

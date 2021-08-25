@@ -1,5 +1,4 @@
 ﻿using Microsoft.Extensions.DependencyInjection;
-using PpmApi.DI;
 
 namespace SingletonScopedTransientRegistrar
 {
@@ -11,13 +10,13 @@ namespace SingletonScopedTransientRegistrar
             {
                 scan
                     .FromApplicationDependencies(a => a.GetName()?.Name?.StartsWith(projectAssemblyPrefix) == true)
-                    .AddClasses(classes => classes.AssignableTo<ITransientDependency>())
+                    .AddClasses(classes => classes.AssignableTo<ITransient>())
                     .AsSelfWithInterfaces()
                     .WithTransientLifetime()
-                    .AddClasses(classes => classes.AssignableTo<IScopedDependency>())
+                    .AddClasses(classes => classes.AssignableTo<IScoped>())
                     .AsSelfWithInterfaces()
                     .WithScopedLifetime()
-                    .AddClasses(classes => classes.AssignableTo<ISingletonDependency>())
+                    .AddClasses(classes => classes.AssignableTo<ISingleton>())
                     .AsSelfWithInterfaces()
                     .WithSingletonLifetime();
             });
