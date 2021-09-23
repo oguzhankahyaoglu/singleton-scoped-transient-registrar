@@ -10,10 +10,11 @@
         <PackageProjectUrl>https://github.com/oguzhankahyaoglu/singleton-scoped-transient-registrar.git</PackageProjectUrl>
         <RepositoryUrl>https://github.com/oguzhankahyaoglu/singleton-scoped-transient-registrar.git</RepositoryUrl>
         <PackageTags>singleton scoped transient dependency registrar</PackageTags>
-        <PackageVersion>2.0.0</PackageVersion>
+        <PackageVersion>3.0.0</PackageVersion>
         <PackageReleaseNotes>
-            1.0 initial release
+            3.0 Interface parameters added, as alternatives to IScoped,ITransient etc.
             2.0 breaking changes; "dependency" suffix of interfaces removed like ITransientDependency => ITransient, namespaces to "SingletonScopedTransientRegistrar" instead of "PPM.DI"
+            1.0 initial release
         </PackageReleaseNotes>
     </PropertyGroup>
 
